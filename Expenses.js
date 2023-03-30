@@ -7,331 +7,331 @@ import {
   TextInput,
   TouchableOpacity,
   View,
-} from 'react-native';
-import React, {useEffect, useState} from 'react';
-import Icon from 'react-native-vector-icons/Ionicons';
+} from "react-native";
+import React, { useEffect, useState } from "react";
+import Icon from "react-native-vector-icons/Ionicons";
 
 export default function Expenses() {
   const expDetails = [
     {
-      id: '01',
-      month: 'January',
+      id: "01",
+      month: "January",
       details: [
         {
-          type: 'Rent',
-          amount: '+500$',
+          type: "Rent",
+          amount: "+500$",
         },
         {
-          type: 'Food',
-          amount: '+200$',
+          type: "Food",
+          amount: "+200$",
         },
         {
-          type: 'Gas',
-          amount: '+49$',
+          type: "Gas",
+          amount: "+49$",
         },
         {
-          type: 'Car',
-          amount: '+29$',
+          type: "Car",
+          amount: "+29$",
         },
         {
-          type: 'Savings',
-          amount: '+870$',
+          type: "SavingsSavings",
+          amount: "+870$",
         },
       ],
     },
     {
-      id: '02',
-      month: 'February',
+      id: "02",
+      month: "February",
       details: [
         {
-          type: 'Rent',
-          amount: '+500$',
+          type: "Rent",
+          amount: "+500$",
         },
         {
-          type: 'Food',
-          amount: '+200$',
+          type: "Food",
+          amount: "+200$",
         },
         {
-          type: 'Gas',
-          amount: '+49$',
+          type: "Gas",
+          amount: "+49$",
         },
         {
-          type: 'Car',
-          amount: '+29$',
+          type: "Car",
+          amount: "+29$",
         },
         {
-          type: 'Savings',
-          amount: '+870$',
+          type: "Savings",
+          amount: "+870$",
         },
       ],
     },
     {
-      id: '03',
-      month: 'March',
+      id: "03",
+      month: "March",
       details: [
         {
-          type: 'Rent',
-          amount: '+500$',
+          type: "Rent",
+          amount: "+500$",
         },
         {
-          type: 'Food',
-          amount: '+200$',
+          type: "Food",
+          amount: "+200$",
         },
         {
-          type: 'Gas',
-          amount: '+49$',
+          type: "Gas",
+          amount: "+49$",
         },
         {
-          type: 'Car',
-          amount: '+29$',
+          type: "Car",
+          amount: "+29$",
         },
         {
-          type: 'Savings',
-          amount: '+870$',
+          type: "Savings",
+          amount: "+870$",
         },
       ],
     },
     {
-      id: '04',
-      month: 'April',
+      id: "04",
+      month: "April",
       details: [
         {
-          type: 'Rent',
-          amount: '+500$',
+          type: "Rent",
+          amount: "+500$",
         },
         {
-          type: 'Food',
-          amount: '+200$',
+          type: "Food",
+          amount: "+200$",
         },
         {
-          type: 'Gas',
-          amount: '+49$',
+          type: "Gas",
+          amount: "+49$",
         },
         {
-          type: 'Car',
-          amount: '+29$',
+          type: "Car",
+          amount: "+29$",
         },
         {
-          type: 'Savings',
-          amount: '+870$',
+          type: "Savings",
+          amount: "+870$",
         },
       ],
     },
     {
-      id: '05',
-      month: 'May',
+      id: "05",
+      month: "May",
       details: [
         {
-          type: 'Rent',
-          amount: '+500$',
+          type: "Rent",
+          amount: "+500$",
         },
         {
-          type: 'Food',
-          amount: '+200$',
+          type: "Food",
+          amount: "+200$",
         },
         {
-          type: 'Gas',
-          amount: '+49$',
+          type: "Gas",
+          amount: "+49$",
         },
         {
-          type: 'Car',
-          amount: '+29$',
+          type: "Car",
+          amount: "+29$",
         },
         {
-          type: 'Savings',
-          amount: '+870$',
+          type: "Savings",
+          amount: "+870$",
         },
       ],
     },
     {
-      id: '06',
-      month: 'June',
+      id: "06",
+      month: "June",
       details: [
         {
-          type: 'Rent',
-          amount: '+500$',
+          type: "Rent",
+          amount: "+500$",
         },
         {
-          type: 'Food',
-          amount: '+200$',
+          type: "Food",
+          amount: "+200$",
         },
         {
-          type: 'Gas',
-          amount: '+49$',
+          type: "Gas",
+          amount: "+49$",
         },
         {
-          type: 'Car',
-          amount: '+29$',
+          type: "Car",
+          amount: "+29$",
         },
         {
-          type: 'Savings',
-          amount: '+870$',
+          type: "Savings",
+          amount: "+870$",
         },
       ],
     },
     {
-      id: '07',
-      month: 'July',
+      id: "07",
+      month: "July",
       details: [
         {
-          type: 'Rent',
-          amount: '+500$',
+          type: "Rent",
+          amount: "+500$",
         },
         {
-          type: 'Food',
-          amount: '+200$',
+          type: "Food",
+          amount: "+200$",
         },
         {
-          type: 'Gas',
-          amount: '+49$',
+          type: "Gas",
+          amount: "+49$",
         },
         {
-          type: 'Car',
-          amount: '+29$',
+          type: "Car",
+          amount: "+29$",
         },
         {
-          type: 'Savings',
-          amount: '+870$',
+          type: "Savings",
+          amount: "+870$",
         },
       ],
     },
     {
-      id: '08',
-      month: 'August',
+      id: "08",
+      month: "August",
       details: [
         {
-          type: 'Rent',
-          amount: '+500$',
+          type: "Rent",
+          amount: "+500$",
         },
         {
-          type: 'Food',
-          amount: '+200$',
+          type: "Food",
+          amount: "+200$",
         },
         {
-          type: 'Gas',
-          amount: '+49$',
+          type: "Gas",
+          amount: "+49$",
         },
         {
-          type: 'Car',
-          amount: '+29$',
+          type: "Car",
+          amount: "+29$",
         },
         {
-          type: 'Savings',
-          amount: '+870$',
+          type: "Savings",
+          amount: "+870$",
         },
       ],
     },
     {
-      id: '09',
-      month: 'September',
+      id: "09",
+      month: "September",
       details: [
         {
-          type: 'Rent',
-          amount: '+500$',
+          type: "Rent",
+          amount: "+500$",
         },
         {
-          type: 'Food',
-          amount: '+200$',
+          type: "Food",
+          amount: "+200$",
         },
         {
-          type: 'Gas',
-          amount: '+49$',
+          type: "Gas",
+          amount: "+49$",
         },
         {
-          type: 'Car',
-          amount: '+29$',
+          type: "Car",
+          amount: "+29$",
         },
         {
-          type: 'Savings',
-          amount: '+870$',
+          type: "Savings",
+          amount: "+870$",
         },
       ],
     },
     {
-      id: '10',
-      month: 'October',
+      id: "10",
+      month: "October",
       details: [
         {
-          type: 'Rent',
-          amount: '+500$',
+          type: "Rent",
+          amount: "+500$",
         },
         {
-          type: 'Food',
-          amount: '+200$',
+          type: "Food",
+          amount: "+200$",
         },
         {
-          type: 'Gas',
-          amount: '+49$',
+          type: "Gas",
+          amount: "+49$",
         },
         {
-          type: 'Car',
-          amount: '+29$',
+          type: "Car",
+          amount: "+29$",
         },
         {
-          type: 'Savings',
-          amount: '+870$',
+          type: "Savings",
+          amount: "+870$",
         },
       ],
     },
     {
-      id: '11',
-      month: 'November',
+      id: "11",
+      month: "November",
       details: [
         {
-          type: 'Rent',
-          amount: '+500$',
+          type: "Rent",
+          amount: "+500$",
         },
         {
-          type: 'Food',
-          amount: '+200$',
+          type: "Food",
+          amount: "+200$",
         },
         {
-          type: 'Gas',
-          amount: '+49$',
+          type: "Gas",
+          amount: "+49$",
         },
         {
-          type: 'Car',
-          amount: '+29$',
+          type: "Car",
+          amount: "+29$",
         },
         {
-          type: 'Savings',
-          amount: '+870$',
+          type: "Savings",
+          amount: "+870$",
         },
       ],
     },
     {
-      id: '12',
-      month: 'December',
+      id: "12",
+      month: "December",
       details: [
         {
-          type: 'Rent',
-          amount: '+500$',
+          type: "Rent",
+          amount: "+500$",
         },
         {
-          type: 'Food',
-          amount: '+200$',
+          type: "Food",
+          amount: "+200$",
         },
         {
-          type: 'Gas',
-          amount: '+49$',
+          type: "Gas",
+          amount: "+49$",
         },
         {
-          type: 'Car',
-          amount: '+29$',
+          type: "Car",
+          amount: "+29$",
         },
         {
-          type: 'Savings',
-          amount: '+870$',
+          type: "Savings",
+          amount: "+870$",
         },
       ],
     },
   ];
 
-  const [isOpened, setIsOpened] = useState('');
-  const [toEdited, setToEdited] = useState('');
+  const [isOpened, setIsOpened] = useState("");
+  const [toEdited, setToEdited] = useState("");
   const [editedVal, setEditedVal] = useState(expDetails);
   const [errDet, setErrDet] = useState([]);
-  const [errMon, setErrMon] = useState('');
+  const [errMon, setErrMon] = useState("");
   // const [errType, setErrType] = useState('');
   // const [errText, setErrText] = useState('');
   // const [typeErrMon, setTypeErrMon] = useState('');
@@ -357,13 +357,13 @@ export default function Expenses() {
     // }
     // console.log(errText);
     // console.log(/^[0-9]+$/.test(newval));
-    const newArr = editedVal.map(obj => {
+    const newArr = editedVal.map((obj) => {
       if (obj.month === val.month) {
         // setErrMon(val.month);
         // setErrDet(itm);
-        const innArr = obj.details.map(obj1 => {
+        const innArr = obj.details.map((obj1) => {
           if (obj1.type === itm) {
-            return {...obj1, amount: newval};
+            return { ...obj1, amount: newval };
           }
           return obj1;
         });
@@ -378,23 +378,23 @@ export default function Expenses() {
     // }
   };
 
-  const handleSubmit = val => {
+  const handleSubmit = (val) => {
     // setErrText('');
     // setToEdited('');
-    editedVal.map(obj => {
+    editedVal.map((obj) => {
       if (obj.month === val.month) {
         const filtered = val.details
-          .filter(obj1 => {
+          .filter((obj1) => {
             // if (!/^[0-9]+$/.test(obj1.amount)) {
             //   setErrType('invalid');
             // }
             return !obj1.amount || /^[A-Za-z]+$/.test(obj1.amount);
           })
-          .map(a => {
+          .map((a) => {
             return a.type;
           });
         console.log(filtered);
-        filtered.length == 0 && setToEdited('');
+        filtered.length == 0 && setToEdited("");
         // filtered.length == 0 && setErrType('');
         filtered.length !== 0 && setErrMon(obj.month);
         // filtered.length !== 0 && setErrType('required');
@@ -413,34 +413,37 @@ export default function Expenses() {
         <Text style={styles.heading}>Expenses</Text>
         <ScrollView
           style={styles.scrollContent}
-          showsVerticalScrollIndicator={false}>
-          {editedVal.map(val => {
+          showsVerticalScrollIndicator={false}
+        >
+          {editedVal.map((val) => {
             return (
               <View key={val.id}>
                 <Pressable
                   onPress={() => {
                     isOpened === val.month
-                      ? setIsOpened('')
+                      ? setIsOpened("")
                       : setIsOpened(val.month);
                   }}
                   style={styles.monthcontainer}
-                  on>
+                  on
+                >
                   <Text
                     // onPress={}
-                    style={styles.month}>
+                    style={styles.month}
+                  >
                     {val.month}
                   </Text>
                   {isOpened === val.month ? (
                     <Icon
-                      style={{marginLeft: 'auto'}}
+                      style={{ marginLeft: "auto" }}
                       name="md-chevron-up-circle"
                       size={30}
                       color="#F6483B"
-                      onPress={() => setIsOpened('')}
+                      onPress={() => setIsOpened("")}
                     />
                   ) : (
                     <Icon
-                      style={{marginLeft: 'auto'}}
+                      style={{ marginLeft: "auto" }}
                       name="md-chevron-down-circle"
                       size={30}
                       color="black"
@@ -450,7 +453,7 @@ export default function Expenses() {
                 </Pressable>
                 {isOpened === val.month ? (
                   <View>
-                    {val.details.map(itm => {
+                    {val.details.map((itm) => {
                       return (
                         <View key={itm.type}>
                           <View style={styles.expContainer}>
@@ -460,11 +463,12 @@ export default function Expenses() {
                                 errMon === val.month
                                   ? styles.errtype
                                   : styles.type
-                              }>
+                              }
+                            >
                               {itm.type}
                             </Text>
                             {toEdited === val.month ? (
-                              <View style={{marginLeft: 'auto'}}>
+                              <View style={{ marginLeft: "auto" }}>
                                 <TextInput
                                   // keyboardType="numeric"
                                   style={
@@ -473,7 +477,7 @@ export default function Expenses() {
                                       ? styles.errinputBox
                                       : styles.inputBox
                                   }
-                                  onChangeText={newVal =>
+                                  onChangeText={(newVal) =>
                                     changeVal(newVal, val, itm.type)
                                   }
                                   defaultValue={itm.amount}
@@ -500,8 +504,8 @@ export default function Expenses() {
                                       ? 'invalid'
                                       : ''} */}
                                     {/^[A-Za-z]+$/.test(itm.amount)
-                                      ? 'invalid'
-                                      : 'required'}
+                                      ? "invalid"
+                                      : "required"}
                                   </Text>
                                 ) : null}
                               </View>
@@ -511,7 +515,7 @@ export default function Expenses() {
                           </View>
                           <View
                             style={{
-                              backgroundColor: '#F2F2F7',
+                              backgroundColor: "#F2F2F7",
                               height: 0.5,
                               marginLeft: 18,
                               marginRight: 18,
@@ -523,14 +527,16 @@ export default function Expenses() {
                     <View style={styles.buttonCon}>
                       <TouchableOpacity
                         onPressIn={() => setToEdited(val.month)}
-                        style={styles.editButton}>
+                        style={styles.editButton}
+                      >
                         <Text style={styles.editText}>Edit</Text>
                       </TouchableOpacity>
 
                       {toEdited === val.month ? (
                         <TouchableOpacity
                           onPressIn={() => handleSubmit(val)}
-                          style={styles.saveButton}>
+                          style={styles.saveButton}
+                        >
                           <Text style={styles.saveText}>Save</Text>
                         </TouchableOpacity>
                       ) : null}
@@ -548,63 +554,63 @@ export default function Expenses() {
 
 const styles = StyleSheet.create({
   container: {
-    backgroundColor: '#F6483B',
-    height: '100%',
+    backgroundColor: "#F6483B",
+    height: "100%",
     padding: 20,
     paddingBottom: 130,
     paddingTop: 120,
   },
   innerContainer: {
-    backgroundColor: '#F2F2F7',
+    backgroundColor: "#F2F2F7",
     borderRadius: 10,
     padding: 10,
   },
   heading: {
-    color: '#9D9D9B',
+    color: "#9D9D9B",
     fontSize: 20,
-    fontWeight: 'bold',
+    fontWeight: "bold",
     paddingLeft: 18,
   },
   month: {
     fontSize: 18,
-    fontWeight: 'bold',
-    color: 'black',
+    fontWeight: "bold",
+    color: "black",
   },
   monthcontainer: {
-    display: 'flex',
-    flexDirection: 'row',
+    display: "flex",
+    flexDirection: "row",
     padding: 18,
   },
   scrollContent: {
-    backgroundColor: 'white',
+    backgroundColor: "white",
     margin: 10,
     borderRadius: 10,
   },
   type: {
-    color: '#9D9D9B',
+    color: "#9D9D9B",
     fontSize: 18,
     paddingLeft: 18,
     paddingBottom: 10,
   },
   errtype: {
-    color: 'red',
+    color: "red",
     fontSize: 18,
     paddingLeft: 18,
     paddingBottom: 10,
   },
   expContainer: {
-    display: 'flex',
-    flexDirection: 'row',
-    alignItems: 'center',
+    display: "flex",
+    flexDirection: "row",
+    alignItems: "center",
   },
   amt: {
-    color: '#6ED19F',
-    fontWeight: 'bold',
-    marginLeft: 'auto',
+    color: "#6ED19F",
+    fontWeight: "bold",
+    marginLeft: "auto",
     paddingRight: 18,
   },
   editButton: {
-    backgroundColor: 'red',
+    backgroundColor: "red",
     padding: 5,
     width: 50,
     borderRadius: 10,
@@ -612,56 +618,56 @@ const styles = StyleSheet.create({
     margin: 5,
   },
   editText: {
-    textAlign: 'center',
-    color: 'white',
+    textAlign: "center",
+    color: "white",
   },
   saveButton: {
-    backgroundColor: 'mediumseagreen',
+    backgroundColor: "mediumseagreen",
     padding: 5,
     width: 50,
     borderRadius: 10,
-    marginLeft: 'auto',
+    marginLeft: "auto",
     marginRight: 18,
     margin: 5,
   },
   saveText: {
-    textAlign: 'center',
-    color: 'white',
+    textAlign: "center",
+    color: "white",
   },
   buttonCon: {
-    display: 'flex',
-    flexDirection: 'row',
+    display: "flex",
+    flexDirection: "row",
   },
   inputBox: {
     borderWidth: 1,
     height: 30,
     padding: 0,
-    marginLeft: 'auto',
+    marginLeft: "auto",
     marginRight: 18,
     borderRadius: 5,
     width: 100,
-    textAlign: 'right',
+    textAlign: "right",
     paddingRight: 20,
-    borderColor: 'grey',
-    color: 'red',
+    borderColor: "grey",
+    color: "red",
   },
   errinputBox: {
     borderWidth: 2,
     height: 30,
     padding: 0,
-    marginLeft: 'auto',
+    marginLeft: "auto",
     marginRight: 18,
     borderRadius: 5,
     width: 100,
-    textAlign: 'right',
+    textAlign: "right",
     paddingRight: 20,
-    borderColor: 'red',
-    color: 'red',
+    borderColor: "red",
+    color: "red",
   },
   errText: {
-    color: 'red',
+    color: "red",
     fontSize: 12,
-    textAlign: 'right',
+    textAlign: "right",
     marginRight: 18,
   },
 });
