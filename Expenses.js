@@ -53,7 +53,7 @@ export default function Expenses() {
         },
         {
           type: "Gas",
-          amount: "+49$",
+          amount: "+199$",
         },
         {
           type: "Car",
@@ -61,7 +61,7 @@ export default function Expenses() {
         },
         {
           type: "Savings",
-          amount: "+870$",
+          amount: "+900$",
         },
       ],
     },
@@ -79,7 +79,7 @@ export default function Expenses() {
         },
         {
           type: "Gas",
-          amount: "+49$",
+          amount: "+209$",
         },
         {
           type: "Car",
