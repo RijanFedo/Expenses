@@ -75,15 +75,15 @@ export default function Expenses() {
         },
         {
           type: "Food",
-          amount: "+200$",
+          amount: "+100$",
         },
         {
           type: "Gas",
-          amount: "+209$",
+          amount: "+309$",
         },
         {
           type: "Car",
-          amount: "+29$",
+          amount: "+229$",
         },
         {
           type: "Savings",
